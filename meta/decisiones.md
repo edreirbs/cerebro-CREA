@@ -150,6 +150,55 @@ vuelta no produjo ninguna, se dice.**
 > A partir de aquí, las tuyas. La primera suele salir del alto después del
 > piloto — ver `ARRANQUE.md`, paso 3.
 
+## 2026-09-17 — CREA es una organización incubadora, no un producto
+**Qué se decidió.** CREA *"idea, desarrolla, incuba y despliega ágilmente casos
+de negocio basados en tecnologías digitales e IA"*. Es la casa, no el producto.
+**Por qué importa.** Confirma que la lista blanca actual —cuatro partes de
+EntrevistIA— **es correcta hoy y caduca sola**: si CREA incuba casos, el día que
+entre un segundo caso los frentes dejan de ser las partes de uno y pasan a ser
+los casos. La base de Notion ya se llama *Incubadora de proyectos*, en plural.
+**Cómo se aplica — el disparador, escrito para no depender de que alguien se
+acuerde:** en cuanto aparezca material de un segundo caso de negocio, **no se
+compila a ningún frente existente**: se detiene y se rehace la lista blanca.
+Compilarlo dentro de `entrevista` sería meter dos productos en una nota, que es
+el modo de fallo que el método llama *un tema, un archivo*.
+**Descartada:** rehacer la lista blanca ahora, por frentes tipo *ideación ·
+desarrollo · incubación · despliegue*. Ésas son **etapas de un pipeline**, no
+frentes: comparten usuarios y presupuesto, y ninguna responde *"¿cómo va X?"*.
+
+## 2026-09-17 — No se escriben los dolores ni la meta, y se declara qué cuesta
+**Qué se decidió.** Quien opera el vault decidió no llenar por ahora la tabla de
+*dónde me atoro* ni las metas comprometidas.
+**Por qué se registra en vez de dejarlo en blanco.** Un blanco de plantilla se
+lee como trabajo pendiente; **esto es una decisión**, y la diferencia es que
+trae su costo escrito. Sin dolores, el vault compila todo con la misma urgencia
+y no puede ordenar sus hallazgos por lo que destraba a quien lo lee. Sin meta,
+responde *"¿qué pasó?"* pero **no "¿voy bien?"** — no hay contra qué medir.
+**Cómo se aplica.** Las dos secciones dicen explícitamente que están vacías por
+decisión y qué se pierde. Se llenan cuando se quiera; el efecto es inmediato y
+no hay que migrar nada.
+**Descartada:** inventar metas a partir de los objetivos técnicos de desempeño
+que sí aparecen en Notion. Dicen qué tan rápido carga la landing, no si el
+negocio va bien, y usarlos como meta habría producido un vault que responde que
+todo va bien midiendo lo que no importa.
+
+## 2026-09-17 — Un enlace no es un acceso: los tres bloqueos siguen abiertos
+**Qué pasó.** Se asumió que con los enlaces entregados bastaba. **Medido: no
+basta.** Figma devuelve *"Looks like you don't have edit access to this file"* en
+las cuatro llamadas de lectura; Miro resuelve a una página de *unirse al equipo*
+y su API no ve ese tablero entre los 74 de la cuenta; y el sitio de EntrevistIA
+no está entre los 8 proyectos de la cuenta de Netlify conectada.
+**Por qué importa.** Un enlace es una dirección; el acceso es un permiso que da
+otra persona. Confundirlos deja al vault **declarando cobertura completa sobre
+un universo que no pudo abrir** — y una compilada parcial que no se declara se
+lee como completa.
+**Cómo se aplica.** Los tres viven como **compromisos ajenos con fecha de
+apertura** en `proyectos/entrevista.md`, no como pendientes técnicos. Cada
+compilada reintenta y actualiza su antigüedad. Y toda nota de este frente
+declara que **dos de sus fuentes nunca se han leído**.
+**Descartada:** reintentar a ciegas. El plan de Figma tiene tope de 20 lecturas
+al mes y ya se gastaron 4 sin obtener nada.
+
 ## 2026-09-17 — Las fuentes de CREA son ajenas, y entran igual
 **Qué se decidió.** El repositorio, Notion, Miro y Figma pertenecen a otras
 personas. **Entran como fuentes de todas formas.** La lista blanca filtra por
@@ -347,12 +396,16 @@ resuelve con acceso a su repositorio.
 **Quién la cierra:** quien decide. Mientras siga abierta, `vacantes` no se
 compila. -->
 
-## ¿CREA es EntrevistIA, o es una incubadora con varios proyectos?
+## ~~¿CREA es EntrevistIA, o es una incubadora con varios proyectos?~~ — CERRADA 2026-09-17
+**Es una incubadora.** Ver la decisión de arriba y su disparador. Planteamiento
+original abajo.
+
+<!-- ORIGINAL:
 La base de Notion se llama *Incubadora de proyectos*, en plural, pero todo su
 contenido es de un solo producto. Si mañana entra un segundo proyecto, la lista
 blanca de cuatro frentes deja de servir: los frentes serían los proyectos, no
 las partes de éste. **Mientras siga siendo uno, la lista actual es correcta.**
-Es una decisión que hay que reabrir el día que aparezca el segundo, no antes.
+Es una decisión que hay que reabrir el día que aparezca el segundo, no antes. -->
 
 ## ¿Con qué correo se firman los commits de CREA?
 Hoy firma el agente. CREA es trabajo propio en cuenta propia, así que le toca

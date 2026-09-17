@@ -3,42 +3,40 @@
 > Este archivo es el mapa del vault. Se carga solo al iniciar cada sesión.
 > Última actualización: 2026-09-17
 
-> 🔴 **Contrato a medias.** Los frentes (§2) están cerrados y las fuentes (§11)
-> verificadas. Lo que falta son los blancos `{{así}}`: quién eres, dónde te
-> atoras y las metas. Es el paso 1 de `ARRANQUE.md` y es trabajo tuyo, no del
-> agente — un dolor vago produce un vault vago. Búscalos con:
-> `grep -n '{{' CLAUDE.md`
+> **Contrato cerrado con dos huecos declarados**, no olvidados: no hay meta
+> comprometida (§4) y no está escrito dónde se atora quien lo opera (§1). Las
+> dos son decisiones tomadas el 2026-09-17, con su razón en
+> `meta/decisiones.md`. Lo que eso cuesta está dicho en cada sección.
 
 ---
 
-## 1. Quién soy y qué se espera de mí
+## 1. Qué es CREA y para qué existe este vault
 
-{{QUIEN_ERES}}
+**CREA es una organización que idea, desarrolla, incuba y despliega ágilmente
+casos de negocio basados en tecnologías digitales e IA.**
 
-- Reporto a: {{A_QUIEN_REPORTAS}}  *(el programa de incubación CREA tiene una
-  contraparte; nómbrala por rol aquí)*
-- Lo que esa persona espera de mí: {{QUE_ESPERAN}}
-- Un día normal me trae: {{QUE_TE_LLEGA}}
+No es un producto: es la casa donde se incuban productos. Hoy tiene **un caso
+en vuelo, EntrevistIA**, dentro del sprint de incubación jun–dic 2026. Los
+frentes de §2 son las partes de ese caso — y esa elección **caduca en el momento
+en que entre un segundo caso**; el disparador está escrito en
+`meta/decisiones.md`.
 
-**Esa expectativa es el propósito de este vault.** Todo lo que se compile aquí
-debe servir para responder *"¿cómo va X?"* en segundos y con cita a la fuente.
+**Para qué sirve este vault:** responder *"¿cómo va X?"* en segundos y con cita
+a la fuente, sobre lo que CREA tiene en vuelo.
 
-### Dónde me atoro — lo que el vault tiene que resolver
+### Dónde me atoro — **declarado vacío a propósito**
 
-Esta tabla es lo que separa un cerebro útil de un archivero bonito. Sé
-específico: *"tengo mucha información"* no sirve; *"me piden el estado de todo
-en una junta y tardo dos horas en juntarlo"* sí.
+El método pide aquí tres dolores concretos, porque son los que le dicen al vault
+qué priorizar. **Se decidió el 2026-09-17 no escribirlos por ahora.**
 
-| Dolor | Qué hace el vault |
-|---|---|
-| {{DOLOR_1}} | {{COMO_LO_RESUELVE_1}} |
-| {{DOLOR_2}} | {{COMO_LO_RESUELVE_2}} |
-| {{DOLOR_3}} | {{COMO_LO_RESUELVE_3}} |
+Lo que eso cuesta, para que esté dicho y no se descubra después: sin esta tabla
+el vault **compila todo con la misma urgencia**. Puede responder *qué pasó*,
+pero no sabe qué es lo que más te cuesta, así que no puede ordenar sus hallazgos
+por lo que a ti te destraba. Se llena cuando quieras y el efecto es inmediato.
 
-> Un dolor ya está medido y puedes copiarlo si te sirve: **lo que Notion dice
-> que es el producto y lo que el sitio desplegado realmente hace no coinciden**,
-> y nadie lo había puesto lado a lado. Está registrado en
-> `proyectos/entrevista.md`.
+**Un dolor ya está medido**, por si sirve de arranque: *lo que Notion dice que
+es el producto y lo que está desplegado no coinciden*, y nadie lo había puesto
+lado a lado. Cuatro contradicciones en `proyectos/entrevista.md`.
 
 ---
 
@@ -90,14 +88,13 @@ Ficha en `personas/` **solo** para quien cumple al menos uno de tres criterios:
 demás quedan como texto dentro de la nota, citables y buscables, sin nodo en el
 grafo.
 
-| Persona | Rol | Qué necesito de esa persona |
-|---|---|---|
-| {{PERSONA_1}} | {{ROL}} | {{QUE_NECESITAS}} |
+*(Vacía: la compilada del 2026-09-17 no levantó ni un nombre, por la regla de
+datos personales.)*
 
-> Vacía a propósito: la compilada del 2026-09-17 no levantó ni un nombre, por
-> la regla de no escribir datos personales. Dos huecos ya identificados piden
-> una persona con nombre y rol: quién es dueño del archivo de Figma y quién
-> administra el equipo de Miro. Ver `proyectos/entrevista.md`.
+> **Tres fichas hacen falta y son las mismas tres que bloquean el vault:** quien
+> es dueño del archivo de Figma, quien administra el equipo de Miro, y quien
+> despliega el sitio de EntrevistIA. Las tres **bloquean**, que es el primero de
+> los tres criterios. Ver los compromisos en `proyectos/entrevista.md`.
 
 > 🎯 Si dos frentes distintos se traban con dos personas que reportan a la
 > misma, esa tercera persona es tu palanca más eficiente. Anótalo aquí.
@@ -106,31 +103,26 @@ grafo.
 
 ## 4. Metas y calendario
 
-**Calendario:** jun 2026 – dic 2026, la ventana del sprint de incubación,
-tomada de la descripción de la base de Notion. Qué pasa después de diciembre no
-está escrito en ninguna fuente que se haya leído.
+**Calendario:** jun 2026 – dic 2026, la ventana del sprint de incubación, tomada
+de la descripción de la base de Notion. Qué pasa después de diciembre no está
+escrito en ninguna fuente leída.
 
-**Las metas comprometidas — la definición formal de éxito:**
+**Metas comprometidas: no hay, y es una decisión, no un olvido.**
 
-| Frente | Meta comprometida | Cómo se mide |
-|---|---|---|
-| Entrevista | **No encontrada.** Ver el aviso de abajo. | — |
-| Vacantes | **No encontrada.** | — |
-| Comercial | **No encontrada.** | — |
-| Incubación | **No encontrada.** | — |
+Se buscó en las 17 filas de Notion, en el bundle del sitio y en el árbol del
+repositorio: no aparece una meta de negocio con número —ni usuarios, ni
+ingresos, ni conversión, ni fecha de lanzamiento—. Se confirmó el 2026-09-17 que
+**por ahora no hace falta ponerla**.
 
-**Fuente única y válida de estas metas:** {{DONDE_VIVEN}} — no se localizó.
-
-> 🔴 **No hay cifra de meta comprometida en ninguna fuente leída, y eso se
-> escribe en vez de inventarse.** Lo que sí hay son objetivos técnicos de
-> desempeño (peso de la landing, Lighthouse, tiempo de carga) que **no son la
-> meta del negocio**: dicen qué tan rápido carga, no si va bien. Mientras esta
-> tabla siga vacía, el vault puede registrar actividad pero **no puede
-> responder "¿voy bien?"**. Es una limitación real del sistema, no un pendiente
-> administrativo.
+> 🔴 **La consecuencia, escrita para no redescubrirla:** este vault puede
+> responder *"¿qué pasó?"*, *"¿quién debe qué?"* y *"¿en qué se contradicen las
+> fuentes?"*. **No puede responder "¿voy bien?"**, porque no hay contra qué
+> medir. No es un pendiente administrativo: es el techo del sistema mientras
+> esta sección siga así.
 >
-> Búsqueda hecha: las 17 filas de la base de Notion y todo el bundle del sitio.
-> **No encontré, buscando así** — no afirmo que no exista.
+> Lo que sí hay son objetivos técnicos de desempeño —peso de la landing,
+> Lighthouse, tiempo de carga—. Dicen qué tan rápido carga, no si va bien.
+> **No los uses como meta.**
 
 ---
 
