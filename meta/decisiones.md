@@ -150,6 +150,25 @@ vuelta no produjo ninguna, se dice.**
 > A partir de aquí, las tuyas. La primera suele salir del alto después del
 > piloto — ver `ARRANQUE.md`, paso 3.
 
+## 2026-09-17 — El repositorio es la fuente primaria del producto; el despliegue no
+**Qué pasó.** La primera compilada concluyó que la entrevista por voz *"no
+estaba construida"*, con evidencia que parecía dura: cero ocurrencias de
+`getUserMedia`, `MediaRecorder` y `AudioContext` en el bundle desplegado. Al
+abrir el repositorio, las tres estaban ahí, más un componente de voz completo y
+una edge function de transcripción. **La afirmación era falsa.**
+**Por qué importa.** El error no estuvo en el dato sino en **qué capa se leyó**.
+Un bundle desplegado es una foto vieja del código, y una búsqueda vacía sobre él
+es *una hipótesis sobre el despliegue*, no un hecho sobre el producto. Es
+exactamente el modo de fallo que el método señala: una afirmación de ausencia no
+falla ruidosamente — basta con no haber buscado donde había que buscar.
+**Cómo se aplica.** Toda afirmación sobre lo que el producto hace o no hace se
+verifica **contra el repositorio**, y se dice en qué capa se verificó. Orden de
+autoridad, de mayor a menor: **repositorio → despliegue → Notion**. Una ausencia
+solo se escribe después de buscarla en el repositorio, y se escribe *"no
+encontré, buscando así"*.
+**Descartada:** tratar las tres capas como una sola fuente, que fue justo lo que
+produjo el error. Son tres relojes distintos y hay que fecharlos por separado.
+
 ## 2026-09-17 — CREA es un cerebro aparte, no una carpeta del personal ni del Tec
 **Por qué:** el método exige que el contenido y la cuenta coincidan, y lo exige
 como **dos vaults separados, no dos carpetas del mismo**. CREA no es trabajo
@@ -221,14 +240,21 @@ cruce que la regla prohíbe.
 > Lo que está decidido a medias. Vivir con una pregunta abierta y escrita es
 > mucho mejor que cerrarla en silencio con una suposición.
 
-## ¿Lo que Notion describe es el plan de diciembre o lo que ya existe?
+## ~~¿Lo que Notion describe es el plan de diciembre o lo que ya existe?~~ — CERRADA 2026-09-17
+**Respuesta: mixta, y ahora medible contra el repositorio.** La voz ya se
+construyó (Notion tenía razón); la evaluación por rúbrica y el pipeline de
+vacantes siguen siendo plan; y la infraestructura que Notion describe —Cloudflare,
+6 tablas— **no es la que se construyó** (Supabase Edge Functions, 4 tablas): ahí
+el error es de Notion. Queda el detalle abajo por valor histórico.
+
+<!-- Planteamiento original:
 De esto dependen las cuatro contradicciones C1–C4 de
 `proyectos/entrevista.md`: si Notion es el objetivo del sprint, son deuda de
 producto y el expediente está bien; si Notion describe el presente, el
 expediente está mal y hay que corregirlo. **Hay una hipótesis que reconcilia
 las cuatro —Notion es el objetivo, el sitio es el estado— pero ninguna fuente
 la dice, así que queda marcada como hipótesis y no como hecho.**
-**Quién la cierra:** quien decide. Una frase basta.
+**Quién la cierra:** quien decide. Una frase basta. -->
 
 ## ¿CREA es EntrevistIA, o es una incubadora con varios proyectos?
 La base de Notion se llama *Incubadora de proyectos*, en plural, pero todo su

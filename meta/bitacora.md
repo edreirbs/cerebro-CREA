@@ -12,6 +12,62 @@ revisar. Se agrega arriba: lo más reciente primero.
 
 ---
 
+## 2026-09-17 (2) — El repositorio entra como fuente, y refuta a la compilada anterior
+
+**Qué se compiló.** Se agregó el repositorio del producto como **quinta fuente y
+primera en autoridad**, y se recompiló entero `proyectos/entrevista.md` contra
+él. Clon superficial del commit `e9724fe` (2026-09-16).
+
+**El hallazgo principal es que esta bitácora se refuta a sí misma una entrada
+antes.** La compilada de hoy en la mañana afirmó que la entrevista por voz *"no
+estaba construida"*, con cero ocurrencias de las APIs de audio en el bundle. En
+el repositorio están: un componente de voz, un servicio de transcripción y una
+edge function `transcribe-audio`. **La afirmación era falsa, y el error no
+estuvo en el dato sino en la capa que se leyó** — un bundle desplegado es una
+foto vieja del código. De ahí salió la regla del día en `meta/decisiones.md`:
+orden de autoridad **repositorio → despliegue → Notion**, y ninguna ausencia se
+escribe sin haberla buscado en el repositorio.
+
+**Las otras tres contradicciones: confirmadas, y dos empeoran.**
+
+- **C2, la evaluación.** No era un residuo del bundle viejo: `ResultsPage.tsx`
+  importa de `src/mocks/mockResults.ts`, con `score: 6.4` escrito a mano, y el
+  dashboard hace lo mismo dos veces más. **La rúbrica de 7 dimensiones que
+  Notion documenta no existe en el código.**
+- **C3, la infraestructura.** Aquí el error es de Notion: el código no menciona
+  Cloudflare ni una vez y usa **4 tablas**, no 6.
+- **C4, las vacantes.** Plan puro. Cero rastro de proveedores de empleo o
+  *matching* en todo el repositorio.
+
+**Y una causa localizada.** El 404 de las 8 rutas internas tiene explicación
+concreta: **no existen `netlify.toml` ni `public/_redirects`** en el
+repositorio. Falta la regla de reescritura de SPA. Es un archivo de dos líneas.
+
+**Qué NO se compiló.** El clon es superficial: **un solo commit, sin historial,
+ramas, PRs ni issues** — así que no hay delta de commits ni decisiones
+rescatadas de PRs cerrados, que es de donde el método dice que entra lo bueno de
+un repo. No se leyó el contenido de los archivos salvo por búsquedas dirigidas,
+ni se compiló ni se corrió nada. Miro y Figma siguen cerrados: **2 de 5 fuentes
+sin acceso**. Los otros tres frentes siguen sin compilar a propósito.
+
+**Fidelidad.** Todo de originales. Pero «original» resultó tener tres capas con
+tres relojes distintos, y ésa es la lección de hoy.
+
+**Conexiones entre frentes: ninguna que pase la vara, y se dice.** Sigue habiendo
+un solo frente compilado; de los otros tres solo hay títulos. El candidato
+—*el informe de resultados es falso y eso es un riesgo comercial*— tiene los dos
+lados en la misma fuente, así que es contradicción interna (R1), no conexión.
+
+**Qué queda marcado para quien decide.** Tres, por urgencia:
+
+1. **El informe de resultados es de mentira y está en producción.** Todo usuario
+   ve 6.4. Es lo que se rompe solo en una demo.
+2. **El despliegue está atrasado respecto del repositorio.** Se está demostrando
+   menos producto del que existe.
+3. **Faltan `netlify.toml` o `public/_redirects`** y por eso el sitio da 404 en
+   cualquier enlace directo.
+
+
 ## 2026-09-17 — Arranque del vault y compilada piloto del frente Entrevista
 
 **Qué se compiló.** Se creó el vault con `cerebro init` (4 frentes, 3 skills) y

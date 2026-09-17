@@ -30,6 +30,14 @@
   // configuración; eso se decide leyendo su contenido.
   // Cero credenciales aquí.
   "fuentes": {
+    // Primero el repositorio: es la fuente primaria del producto. El sitio
+    // desplegado puede estar atrasado respecto de él, y el 2026-09-17 lo
+    // estaba — ver meta/decisiones.md.
+    "repositorio": {
+      "url": "https://github.com/TheIns07/entrevist-ia",
+      "que_entra": "README, docs, ADRs, PRs cerrados con decisión y el delta de commits. Nunca credenciales.",
+      "acceso": "público, lectura anónima"
+    },
     "notion": {
       "espacio": "inscreup",
       "base": "Incubadora de proyectos",

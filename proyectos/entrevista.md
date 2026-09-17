@@ -6,7 +6,8 @@ tags: [producto, entrevistia, piloto]
 estado: activo
 actualizado: 2026-09-17
 fuentes:
-  - "Notion · inscreup · base «Incubadora de proyectos», vista Priority board · leída 2026-09-17"
+  - "Repositorio · github.com/TheIns07/entrevist-ia · commit e9724fe, 2026-09-16 · leído 2026-09-17"
+  - "Notion · base «Incubadora de proyectos», vista Priority board · leída 2026-09-17"
   - "Sitio desplegado · entrevist-ia.netlify.app · bundle compilado · leído 2026-09-17"
 relaciones:
   extiende: []
@@ -17,178 +18,165 @@ relaciones:
 # Entrevista
 
 > Nota piloto del vault: el paso 2 de `ARRANQUE.md` manda compilar **un solo
-> frente, completo**, y éste es. Los otros tres frentes no se han compilado a
-> propósito.
+> frente, completo**, y éste es. Los otros tres no se han compilado a propósito.
 
 ## 1. Estado hoy
 
-Hay un producto desplegado y en uso mínimo, pero **lo que el sitio hace hoy no
-es lo que el expediente dice que es**: el entrevistador es de texto, no de voz,
-y el informe de evaluación está escrito a mano en el código.
+El producto está **más avanzado en el repositorio que en lo desplegado**: la
+entrevista por voz ya está escrita y no está en el aire, y el informe de
+resultados sigue siendo un objeto de prueba escrito a mano.
 
 ## 2. La meta comprometida
 
-**No la hay, o no se encontró.** Ninguna de las dos fuentes accesibles contiene
+**No la hay, o no se encontró.** Ninguna de las tres fuentes accesibles contiene
 una meta de negocio con su número: ni usuarios, ni ingresos, ni conversión, ni
-fecha de lanzamiento.
+fecha de lanzamiento. El repositorio tampoco: su README es **la plantilla por
+omisión de Vite**, sin una línea propia del proyecto.
 
-Lo que sí hay son **objetivos técnicos de desempeño**, que no son la meta:
+Lo que sí hay son objetivos técnicos de desempeño —*"landing menor a 500 KB"*,
+*"Lighthouse móvil superior a 90"*, *"carga inferior a 2 segundos"* (Notion,
+*Stack Tecnologico*)— que dicen qué tan rápido carga, no si va bien.
 
-- *"Landing inicial menor a aproximadamente 500 KB"*
-- *"Lighthouse móvil superior a 90"*
-- *"Tiempo de carga inicial inferior a 2 segundos en condiciones normales"*
-
-— Notion, página *Stack Tecnologico*, sección Objetivos de performance, leída
-2026-09-17.
-
-**No encontré, buscando así:** las 17 filas de la base de Notion y el bundle
-completo del sitio. No afirmo que la meta no exista — afirmo que no está en lo
-que pude leer, y dos de las cuatro fuentes están cerradas.
+**No encontré, buscando así:** 17 filas de Notion, el bundle del sitio y el
+árbol completo del repositorio. No afirmo que la meta no exista.
 
 ## 3. Numeralias
 
 | Cifra | Valor | Fecha | Fuente | Fidelidad |
 |---|---|---|---|---|
-| Elementos en el tablero del sprint | 17 | 2026-09-17 | Notion, vista Priority board | Original |
-| De esos, con cuerpo escrito | 3 de 17 | 2026-09-17 | Notion | Original |
+| Último commit del repositorio | `e9724fe`, *Protected routes ix* | 2026-09-16 | Repo | Original |
+| Páginas de la aplicación | 13 | 2026-09-17 | Repo, `src/pages/` | Original |
+| Edge functions escritas | 2 — `analyze-resume`, `transcribe-audio` | 2026-09-17 | Repo, `supabase/functions/` | Original |
+| Tablas que el código realmente usa | 4 — `profiles`, `interview_sessions`, `interview_answers`, `interview_results` | 2026-09-17 | Repo, llamadas `.from()` | Original |
+| Tablas que Notion planea | 6 | 2026-09-17 | Notion, *Base de datos* | Original |
+| Archivos de datos simulados | 3 — `mockResults`, `mockDashboard`, `mockInterview` | 2026-09-17 | Repo, `src/mocks/` | Original |
+| Puntaje mostrado en resultados | 6.4, escrito a mano | 2026-09-17 | Repo, `src/mocks/mockResults.ts:23` | Original |
+| Elementos en el tablero del sprint | 17, de los cuales **3 con cuerpo** | 2026-09-17 | Notion | Original |
 | Cobertura de la propiedad `Priority` | 14 de 17 filas | 2026-09-17 | Notion | Original |
-| Filas marcadas *Not started* | 17 de 17 | 2026-09-17 | Notion, columna de estado | Original |
-| Preguntas del banco de entrevista | 5, fijas (q1–q5) | 2026-09-17 | Bundle del sitio | Código, no comportamiento |
-| Límite por respuesta | 500 caracteres | 2026-09-17 | Bundle del sitio | Código |
-| Puntaje mostrado en resultados | 6.4, idéntico para todo usuario | 2026-09-17 | Bundle del sitio, objeto fijo | Código |
-| Dimensiones de la rúbrica planeada | 7 | 2026-09-17 | Notion, tabla *Interview Evaluations* | Original |
-| Rutas internas del sitio que responden | 0 de 8 | 2026-09-17 | Peticiones HTTP al dominio | Verificado dos veces |
+| Filas marcadas *Not started* | 17 de 17 | 2026-09-17 | Notion | Original |
+| Rutas internas del sitio que responden | 0 de 8 | 2026-09-17 | Peticiones HTTP | Verificado |
 
 > 🔴 **Ninguna de estas cifras ha salido del vault.** Antes de que alguna entre
-> a un pitch o a un reporte, se verifica contra el original — las de adentro se
-> corrigen, las presentadas ya no.
+> a un pitch se verifica contra el original.
 
 ## 4. Hitos
 
-- **jun 2026 – dic 2026** — ventana declarada del sprint de incubación CREA.
-  Fuente: descripción interna de la base de Notion. *No visible en el tablero
-  renderizado; solo en los metadatos de la base.*
-- **2026-07-03** — edición más antigua registrada en el tablero.
-- **2026-09-12** — se editan 10 de las 17 filas el mismo día.
-- **2026-09-15** — última edición de *Pitch de venta: Elevator pitch*.
-- **2026-09-17** — última edición de *Scrapper*, el elemento más reciente.
-- **Próximos: no hay ninguno con fecha** en ninguna fuente leída. No hay
-  roadmap, changelog ni fecha de lanzamiento.
+- **jun 2026 – dic 2026** — ventana del sprint de incubación CREA. Fuente:
+  descripción interna de la base de Notion, no visible en el tablero renderizado.
+- **2026-09-12** — se editan 10 de las 17 filas de Notion el mismo día.
+- **2026-09-16** — último commit del repositorio.
+- **2026-09-17** — última edición de *Scrapper* en Notion.
+- **Próximos: ninguno con fecha** en ninguna fuente. No hay roadmap ni changelog.
 
 ## 5. Decisiones tomadas
 
-Registradas con la cautela que merecen: **el tablero documenta elecciones
-técnicas pero no dice quién las tomó ni cuándo**, así que van sin autor y sin
-fecha, que es un hueco del expediente, no un dato.
+El expediente documenta elecciones técnicas pero **no dice quién las tomó ni
+cuándo**, así que van sin autor: es un hueco, no un dato.
 
-- **Entrevista por voz** sobre WebRTC, Web Audio API y MediaDevices API.
-  Fuente: Notion, *Stack Tecnologico*. **Descartado:** no consta.
-- **Evaluación por rúbrica de 7 dimensiones** (overall, clarity, structure,
-  evidence, relevance, communication, confidence). Fuente: Notion, *Base de
-  datos*, tabla *Interview Evaluations*.
-- **Control de costo por usuario** con tabla `Usage` dedicada. Fuente: Notion,
-  *Base de datos*. Es la decisión que hace de este frente un frente: tiene
-  presupuesto propio y está declarado.
-- **Rerank con IA sobre un TOP 12 local para devolver un TOP 5.** Fuente:
-  Notion, *Scrapper*. Pertenece al frente [[vacantes]], se anota aquí por el
-  pipeline compartido.
+- **Entrevista por voz**, y ya está construida: `src/components/voice/VoiceInputButton.tsx`,
+  `src/services/ai/transcription.service.ts` y la edge function `transcribe-audio`.
+  Usa `getUserMedia`, `MediaRecorder` y `AudioContext`. **Descartado:** no consta.
+- **Supabase Edge Functions** como servidor, no Cloudflare Workers. El repo no
+  tiene una sola mención de Cloudflare. Corrige lo que dice Notion.
+- **Análisis de CV con IA** en la edge function `analyze-resume`, con un motor
+  de PDF propio y extenso (`src/lib/pdf-engine/`, 11 submódulos).
+- **Rutas protegidas** con `src/routes/ProtectedRoute.tsx`, que es el trabajo
+  del último commit.
+- **Evaluación por rúbrica de 7 dimensiones**: sigue siendo **solo plan de
+  Notion**. Lo que corre es un mock.
 
-**Hueco:** no hay una sola decisión en el expediente con la forma completa que
-pide el método — qué, cuándo, quién, y qué se descartó y por qué. Esa cuarta
-parte, la alternativa descartada, no aparece en ninguna fuente.
+**Hueco:** ninguna decisión del expediente trae su alternativa descartada. Es el
+bloque que más vale a los seis meses y está vacío.
 
 ## 6. Compromisos ajenos
 
-**Ninguno capturado**, y no porque no existan: la compilada del 2026-09-17 se
-hizo con la regla de no escribir nombres de personas, y sin nombre un
-compromiso no es accionable. Dos bloqueos sí están identificados y necesitan
-que alguien les ponga nombre y rol:
+**Ninguno capturado con nombre**, por la regla de datos personales. Dos bloqueos
+identificados necesitan que alguien les ponga nombre y rol:
 
 | Qué hace falta | A quién bloquea | Desde |
 |---|---|---|
-| Acceso de lectura al archivo de Figma *Entrenamiento Entrevistas IA* | A toda compilada de diseño de este frente | 2026-09-17 |
-| Entrada al equipo de Miro donde vive el tablero de producto | A toda compilada de producto | 2026-09-17 |
+| Acceso de lectura al archivo de Figma | A toda compilada de diseño | 2026-09-17 |
+| Entrada al equipo de Miro | A toda compilada de producto | 2026-09-17 |
 
 ## 7. Riesgos y contradicciones abiertas
 
-### Contradicciones — registradas, no resueltas
+**El repositorio resolvió una de las cuatro contradicciones y confirmó las
+otras tres.** La pregunta *"¿Notion es el plan o la realidad?"* ya tiene
+respuesta, y es **mixta y medible**: una parte ya se construyó, dos siguen
+siendo plan, y una es error de Notion.
 
-**C1 · La voz.** Notion describe un entrevistador hablado sobre WebRTC, Web
-Audio API y MediaDevices API (*Stack Tecnologico*, 2026-09-12), y la portada
-promete textualmente *"Respondes en voz alta a un entrevistador con IA"*. El
-bundle desplegado tiene **cero** ocurrencias de `getUserMedia`,
-`MediaRecorder`, `SpeechRecognition`, `speechSynthesis` y `AudioContext`; las
-respuestas se escriben en un campo de texto de 500 caracteres.
+### C1 · La voz — **CERRADA el 2026-09-17. Notion tenía razón.**
+La entrevista por voz **sí está implementada** en el repositorio. El error era
+mío: lo concluí del bundle desplegado, y **el despliegue está atrasado respecto
+del repositorio**. El detalle y la regla que produjo están en
+`meta/decisiones.md`.
+**Lo que queda no es contradicción sino deuda:** está escrita y no está en el
+aire.
 
-**C2 · La evaluación.** Notion describe una rúbrica de 7 dimensiones
-persistida en base de datos. El sitio muestra un objeto fijo escrito en el
-código: puntaje 6.4 y desglose 8, 7, 8, 3, 6, **igual para todo usuario**.
+### C2 · La evaluación — **CONFIRMADA, y es peor de lo que parecía.**
+No es que el bundle viejo tuviera un valor fijo: `src/pages/ResultsPage.tsx`
+importa de `src/mocks/mockResults.ts`, donde `score: 6.4` está escrito a mano.
+El dashboard hace lo mismo (`mockDashboard.ts`, dos veces). **La rúbrica de 7
+dimensiones que Notion documenta no existe en el código.** Todo usuario que
+termine una entrevista ve el mismo resultado.
 
-**C3 · La infraestructura.** Notion nombra Cloudflare Workers y un esquema de
-6 tablas (`Users`, `Candidate Profiles`, `Interview Sessions`,
-`Interview Turns`, `Interview Evaluations`, `Usage`). El sitio corre sobre
-Netlify Edge Functions y su cliente habla con 5 tablas de nombres distintos
-(`profiles`, `interview_sessions`, `interview_questions`,
-`interview_answers`, `interview_results`).
+### C3 · La infraestructura — **CONFIRMADA, y el error es de Notion.**
+Notion nombra Cloudflare Workers y un esquema de 6 tablas. El código no
+menciona Cloudflare ni una vez y usa **4 tablas**: `profiles`,
+`interview_sessions`, `interview_answers`, `interview_results`. El expediente
+de Notion describe una arquitectura que no es la que se construyó.
 
-**C4 · Las vacantes.** El pipeline completo del *Scrapper* está documentado en
-Notion. En el sitio desplegado no hay rastro de él. Ver [[vacantes]].
-
-> 🟡 **Hipótesis que reconciliaría las cuatro, marcada como hipótesis y no como
-> hecho:** Notion describe la arquitectura **objetivo** del sprint y el sitio
-> es el **estado actual** del prototipo. Encaja con las cuatro, pero **ninguna
-> fuente lo dice**. No se promedia, no se elige la más reciente: se pregunta.
->
-> **La pregunta exacta para quien decide:** ¿el contenido de Notion es el plan
-> de diciembre o la descripción de lo que ya existe? De la respuesta depende si
-> C1–C4 son deuda de producto o errores del expediente.
+### C4 · Las vacantes — **CONFIRMADA. Es plan puro.**
+Cero rastro en el repositorio: ni Adzuna, ni Jooble, ni Greenhouse, ni Lever,
+ni nada de *scrapping* o *matching*. El pipeline completo existe solo como
+documento de Notion. Ver [[vacantes]].
 
 ### Riesgos
 
-**R1 · La portada promete lo que el producto no hace.** Voz, y un testimonial
-de *"contratada en 2 semanas"*, contra un producto que escribe y devuelve el
-mismo 6.4 a todos. El daño no es técnico: es que una demo delante de la
-contraparte de incubación o de un comprador B2B lo descubre en vivo. Toca
-también [[comercial]].
+**R1 · El informe de resultados es de mentira y está en producción.** Es el
+riesgo más alto de la lista. Cualquiera que pruebe el producto dos veces con
+respuestas distintas ve el mismo 6.4. En una demo ante la contraparte de
+incubación o un comprador, se descubre solo. Toca también [[comercial]].
 
-**R2 · El sitio está roto para cualquier enlace directo.** Las 8 rutas internas
-(`/login`, `/dashboard`, `/onboarding`, `/terms`, `/privacy`, …) devuelven 404:
-falta la regla de reescritura de SPA. Quien reciba un enlace profundo, o quien
-recargue la página, ve el 404 de Netlify. Es el defecto más barato de arreglar
-de esta lista: una regla `/* /index.html 200`.
+**R2 · El sitio está roto para cualquier enlace directo.** 8 de 8 rutas internas
+dan 404. **Causa localizada en el repositorio:** no existen `netlify.toml` ni
+`public/_redirects`, así que falta la regla de reescritura de SPA. Es el arreglo
+más barato de toda la nota: un archivo de dos líneas.
 
-**R3 · Dos de las cuatro fuentes están cerradas.** Miro y Figma. Mientras sigan
-así, **toda compilada de este frente es parcial por construcción**, y el diseño
-—que es donde suele vivir la decisión de producto— no entra al vault.
+**R3 · El despliegue está atrasado respecto del repositorio.** La voz es la
+prueba. Mientras eso siga así, **lo que se demuestra no es lo que se construyó**,
+y quien juzgue el avance por el sitio va a subestimarlo.
 
-**R4 · El expediente no registra alternativas descartadas.** Sin ellas, cada
-decisión de arquitectura se va a volver a discutir. Es el bloque que más vale a
-los seis meses y hoy está vacío.
+**R4 · El repositorio no se documenta a sí mismo.** Su README es la plantilla
+por omisión de Vite. Toda la documentación del proyecto vive en Notion, que ya
+sabemos que describe otra arquitectura.
+
+**R5 · Dos de las cinco fuentes siguen cerradas** — Miro y Figma. El diseño, que
+es donde suele vivir la decisión de producto, no entra al vault.
 
 ## 8. Cobertura de esta compilada
 
-- **Universo:** 4 contenedores declarados. **Leídos: 2.** Miro y Figma quedaron
-  fuera por falta de permiso, no por criterio.
-- **Notion:** 17 de 17 filas abiertas, pero **solo 3 tienen cuerpo**. Todo lo
-  que se sabe de Comercial, Producto y Tracción viene **únicamente de títulos**.
-- **Sin leer, y es material:** los dos diagramas embebidos desde Figma dentro de
-  *Stack Tecnologico*; las secciones 6 a 12 de esa misma página, que no
-  aparecen en el render público — el documento salta de «5. Base de datos» a
-  «13. Registro» y no sé si están ocultas o nunca se escribieron; comentarios e
-  historial de versiones de Notion.
-- **Sitio:** nunca se vio renderizado ni autenticado. Todo salió del bundle
-  compilado. **Nada de lo que hay detrás del login se compiló**, ni un solo
-  dato real de la base.
-- **Fidelidad:** todo lo de esta nota salió de originales —tablero y código—,
-  **nada de resúmenes**. Pero «original» aquí significa *el código escrito*, no
-  *el sistema corriendo*, y no es lo mismo.
+- **Universo: 5 contenedores. Leídos: 3.** Miro y Figma quedaron fuera por falta
+  de permiso, no por criterio.
+- **Repositorio:** clon superficial (`--depth 1`), así que **solo se vio el
+  último commit**: no hay historial, ni ramas, ni PRs, ni issues. No se leyó el
+  contenido de los archivos fuente salvo por búsquedas dirigidas; no se corrió
+  ni se compiló nada.
+- **Notion:** 17 de 17 filas abiertas, **solo 3 con cuerpo**. Comercial,
+  Producto y Tracción se conocen únicamente por títulos.
+- **Sitio:** nunca se vio renderizado ni autenticado. Y ahora sabemos que
+  además **estaba desactualizado**, así que las conclusiones que salieron de ahí
+  valen menos que las del repositorio.
+- **Fidelidad:** todo de originales, nada de resúmenes. Pero «original» tiene
+  tres capas distintas —repositorio, despliegue y tablero— y **no dicen lo
+  mismo**. El repositorio manda sobre el despliegue; ambos mandan sobre Notion.
 
 ## 9. Fuentes
 
-- 2026-09-17 · Notion, base *Incubadora de proyectos*, vista *Priority board* · https://inscreup.notion.site/38ce78250e0880d39c33ec11ac0277c9
-- 2026-09-17 · Sitio desplegado, leído del bundle compilado · https://entrevist-ia.netlify.app/
-- 2026-09-17 · Figma, *Entrenamiento Entrevistas IA* — **sin acceso de lectura** · https://www.figma.com/design/ewxHYLjZkfq8ZBra53Qbe9/
+- 2026-09-17 · Repositorio, commit `e9724fe` del 2026-09-16 · https://github.com/TheIns07/entrevist-ia
+- 2026-09-17 · Notion, base *Incubadora de proyectos* · https://inscreup.notion.site/38ce78250e0880d39c33ec11ac0277c9
+- 2026-09-17 · Sitio desplegado, leído del bundle · https://entrevist-ia.netlify.app/
+- 2026-09-17 · Figma, *Entrenamiento Entrevistas IA* — **sin acceso** · https://www.figma.com/design/ewxHYLjZkfq8ZBra53Qbe9/
 
-Y una cuarta sin liga, a propósito: el tablero de **Miro** de armado de
-producto. Su enlace de invitación no se guarda aquí porque da entrada a un
-equipo — es credencial, y las credenciales no van en un archivo versionado.
+Y una quinta sin liga a propósito: el tablero de **Miro**. Su enlace de
+invitación da entrada a un equipo — es credencial, y no va versionado.

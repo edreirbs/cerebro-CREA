@@ -274,10 +274,11 @@ Toda nota en `proyectos/` mantiene estos bloques vivos:
 
 ## 11. De dónde sale el material
 
-Cuatro contenedores, con su estado de acceso verificado el **2026-09-17**:
+Cinco contenedores, con su estado de acceso verificado el **2026-09-17**:
 
 | Fuente | Qué es | Acceso |
 |---|---|---|
+| **Repositorio** — `TheIns07/entrevist-ia` | El código del producto. **Fuente primaria** | ✅ Público. Clon superficial: sin historial ni PRs |
 | **Notion** — espacio `inscreup`, base *Incubadora de proyectos* | El tablero del sprint. 17 elementos | ⚠️ Parcial: solo por el sitio público. El conector está autenticado en otro workspace |
 | **Sitio** — `entrevist-ia.netlify.app` | El producto desplegado | ⚠️ Parcial: es una SPA y las rutas internas dan 404; lo leído salió del bundle compilado |
 | **Miro** | El tablero de armado de producto | 🔴 Sin acceso: el enlace exige unirse a otro equipo |
@@ -291,6 +292,12 @@ Cuatro contenedores, con su estado de acceso verificado el **2026-09-17**:
   Agrupar por ellas produce una nota falsa. Agrupa por contenido.
 - ⚠️ **14 de las 17 páginas de Notion están vacías.** Solo tres tienen cuerpo.
   Un título no es una fuente: no cites una fila vacía como si dijera algo.
+- 🔴 **El despliegue no es el código.** El 2026-09-17 el sitio iba atrasado
+  respecto del repositorio y eso produjo una conclusión falsa. **El repositorio
+  manda sobre el despliegue; los dos mandan sobre Notion.** Antes de afirmar que
+  algo no existe, búscalo en el repo.
+- ⚠️ **El repositorio no se documenta.** Su README es la plantilla por omisión
+  de Vite. No lo cites como si describiera el proyecto.
 - ⚠️ **El sitio no se puede leer como sitio.** WebFetch no ejecuta JS y las
   rutas internas devuelven 404. Lo que se lee es el bundle, que es **el código,
   no el comportamiento en vivo**: refleja lo que está escrito, no lo que
