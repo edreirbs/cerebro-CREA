@@ -12,6 +12,34 @@ revisar. Se agrega arriba: lo más reciente primero.
 
 ---
 
+## 2026-09-17 (4) — El vault rechaza por primera vez
+
+**Qué se decidió.** El producto de vacantes hallado en Netlify **no entra**: no
+es de CREA. Se sacó de la lista blanca, de `cerebro.json` y de
+`proyectos/entrevista.md`, y se nombra sin enlace ni detalle.
+
+**Por qué es la entrada más importante hasta ahora.** Es la primera vez que este
+vault ejerce lo único que lo separa de un archivero: **decir que no**. Y el error
+que lo produjo es mío y de forma conocida — decidir si algo nuevo pertenece a un
+frente es **rojo del semáforo**, y lo traté como amarillo: lo compilé y luego
+avisé, en vez de preguntar y luego compilar.
+
+**Consecuencia sobre el frente `vacantes`:** vuelve a ser **plan, no producto**.
+Existe como documento de Notion y nada más.
+
+**Lo que NO se borró, y es a propósito.** La entrada (3) de esta bitácora se
+queda como está. La bitácora es cuaderno de laboratorio: los errores propios se
+registran con la misma prominencia que los aciertos, y corregirla borraría la
+única evidencia de cómo se llegó aquí. Lo que se corrige son las **capas vivas**
+—contrato, configuración y nota—, que ya se corrigieron todas.
+
+**Lo que sigue pendiente de una persona:** si además hay que **borrar el sitio en
+Netlify**. Eso no lo toqué: destruir un despliegue en vivo no se deshace, y no es
+lo mismo que sacarlo del vault.
+
+**Conexiones entre frentes: ninguna que pase la vara, y se dice.**
+
+
 ## 2026-09-17 (3) — Barrer la cuenta de Netlify refuta a las dos compiladas anteriores
 
 **Qué se compiló.** Nada nuevo: se **corrigió**. Entró Netlify como sexto

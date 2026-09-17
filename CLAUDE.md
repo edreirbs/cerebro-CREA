@@ -61,8 +61,8 @@ tokens por sesión.
 
 ### 2. Vacantes
 El pipeline CV → perfil → proveedores de empleo → score → rerank, que en Notion
-aparece como *Scrapper* y que **ya existe desplegado** como «Radar Laboral»
-(`jobinderai.netlify.app`) — hallado el 2026-09-17, sin compilar todavía. **Usuario propio:** quien busca trabajo, que no es
+aparece como *Scrapper*. **Hoy es plan, no producto:** cero rastro en el
+repositorio de EntrevistIA. **Usuario propio:** quien busca trabajo, que no es
 necesariamente quien practica. **Presupuesto propio:** cuotas de proveedores
 externos de vacantes más las llamadas de rerank.
 
@@ -283,7 +283,7 @@ Seis contenedores, con su estado de acceso verificado el **2026-09-17**:
 | **Repositorio** — `TheIns07/entrevist-ia` | El código del producto. **Fuente primaria** | ✅ Público. Clon superficial: sin historial ni PRs |
 | **Notion** — espacio `inscreup`, base *Incubadora de proyectos* | El tablero del sprint. 17 elementos | ⚠️ Parcial: solo por el sitio público. El conector está autenticado en otro workspace |
 | **Sitio** — `entrevist-ia.netlify.app` | El producto desplegado | ⚠️ Parcial: es una SPA y las rutas internas dan 404; lo leído salió del bundle compilado |
-| **Netlify** | Los despliegues | ⚠️ Parcial: `jobinderai` sí está en la cuenta conectada; **`entrevist-ia` no** — vive en otra |
+| **Netlify** | Los despliegues | 🔴 Enumerada el 2026-09-17: 8 proyectos, **ninguno de CREA**. `entrevist-ia` se despliega desde otra cuenta |
 | **Miro** | El tablero de armado de producto | 🔴 Sin acceso: el enlace exige unirse a otro equipo |
 | **Figma** — *Entrenamiento Entrevistas IA* | Los diseños | 🔴 Sin acceso: la cuenta conectada no pertenece al plan del archivo |
 

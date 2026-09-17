@@ -126,20 +126,16 @@ menciona Cloudflare ni una vez y usa **4 tablas**: `profiles`,
 `interview_sessions`, `interview_answers`, `interview_results`. El expediente
 de Notion describe una arquitectura que no es la que se construyó.
 
-### C4 · Las vacantes — **CORREGIDA el 2026-09-17. No es plan: está desplegada.**
-La afirmación de la mañana —*"plan puro, cero rastro"*— era falsa, y por segunda
-vez en el día la causa fue mirar solo los contenedores de la lista. Barriendo la
-cuenta de Netlify apareció **«Radar Laboral»** (`jobinderai.netlify.app`), un
-producto desplegado que hace exactamente lo que describe el *Scrapper*: subir CV
-en PDF/TXT/MD, extraer el perfil, revisarlo, y devolver *"una vacante hot, una
-internacional, una cercana a tu mercado y una reserva ampliada desde varias
-bolsas activas"*, con entrada por Google e historial de búsquedas guardado.
-**Lo que sigue sin verificarse:** qué bolsas de trabajo usa. El cliente solo
-llama a `/api/recommendations` y `/api/search-history`; el pipeline corre del
-lado servidor y **no es visible desde el navegador** — eso es un hueco de la
-compilada, no una ausencia. Ver [[vacantes]].
-**Lo que es rojo y no me toca:** si Radar Laboral es *parte* de EntrevistIA o un
-producto hermano. Está en `meta/decisiones.md` como decisión abierta.
+### C4 · Las vacantes — **CONFIRMADA dentro del alcance de CREA: es plan.**
+Cero rastro en el repositorio de EntrevistIA: ni proveedores de empleo, ni
+*scrapping*, ni *matching*. El pipeline existe solo como documento de Notion.
+
+**Lo que se rechazó, y por qué se anota:** el barrido de la cuenta de Netlify
+del 2026-09-17 encontró un producto desplegado que hace algo parecido. **No
+pertenece a CREA** y quedó fuera por decisión del 2026-09-17 — la primera vez
+que este vault ejerce su lista blanca. Se nombra sin enlace ni detalle, como
+manda la regla: *lo que no encaja se reporta y se deja donde está*. Ver
+[[vacantes]] cuando ese frente se compile.
 
 ### Riesgos
 

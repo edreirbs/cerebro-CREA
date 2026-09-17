@@ -48,10 +48,11 @@
       "produccion": "https://entrevist-ia.netlify.app/"
     },
     // El CONTENEDOR es la cuenta, no una lista de sitios: lo que se despliegue
-    // mañana tiene que ser visible sin editar esto. Así apareció Radar Laboral.
+    // mañana tiene que ser visible sin editar esto. Enumerarla ya sirvió una vez
+    // para encontrar algo que la lista de enlaces no traía — y para rechazarlo.
     "netlify": {
       "equipo": "la cuenta conectada (8 proyectos al 2026-09-17)",
-      "acceso": "parcial: `jobinderai` (Radar Laboral) sí está; `entrevist-ia` NO — se despliega desde otra cuenta"
+      "acceso": "enumerada el 2026-09-17: 8 proyectos, ninguno de CREA. `entrevist-ia` se despliega desde otra cuenta. Se enumera de nuevo cada compilada, no se da por vacía."
     },
     "miro": {
       "tablero": "Armar producto (nombre tomado de Notion, no verificado en Miro)",

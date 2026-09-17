@@ -150,6 +150,29 @@ vuelta no produjo ninguna, se dice.**
 > A partir de aquí, las tuyas. La primera suele salir del alto después del
 > piloto — ver `ARRANQUE.md`, paso 3.
 
+## 2026-09-17 — El producto de vacantes hallado en Netlify NO entra: es el primer rechazo del vault
+**Qué se decidió.** El producto desplegado que apareció al enumerar la cuenta de
+Netlify —parecido al *Scrapper* que Notion documenta— **queda fuera de este
+vault** por decisión de quien decide. No es de CREA.
+**Por qué importa más de lo que parece.** Es la primera vez que este vault
+**rechaza**, y rechazar es literalmente su razón de ser: un vault que acepta
+todo lo que se parece a sus frentes es un archivero en seis semanas. El parecido
+temático no es pertenencia — lo que decide es a quién sirve, quién responde por
+ello y de qué bolsa sale, y la respuesta fue que no es CREA.
+**Cómo se aplica.** Se saca de la lista blanca, de la configuración y de la nota
+de proyecto. **No se borra de la bitácora**: haberlo encontrado y haberlo
+rechazado es historia del vault, y la bitácora es cuaderno de laboratorio, no
+changelog. Se nombra sin enlace ni detalle — *se reporta y se deja donde está*.
+**Y la consecuencia sobre el frente `vacantes`:** vuelve a ser **plan, no
+producto**. Hoy existe como documento de Notion y nada más.
+**Descartada:** meterlo como quinto frente o como parte de `vacantes` por
+parecido temático. Habría contaminado la lista blanca con algo ajeno, que es
+exactamente el modo de fallo contra el que el método escribe la regla.
+**Corrige a:** la compilada del 2026-09-17 (3), que lo dio por parte del frente
+`vacantes` sin haber preguntado. **El error fue mío y de forma conocida:** eso
+era rojo del semáforo —decidir la pertenencia de algo nuevo a un frente— y lo
+traté como amarillo.
+
 ## 2026-09-17 — El universo de fuentes se barre; no se acepta la lista que te dan
 **Qué pasó, y pasó dos veces el mismo día.** Se escribió *"la voz no está
 construida"* y *"el pipeline de vacantes es plan puro"*. Las dos eran falsas. La
@@ -277,7 +300,12 @@ las cuatro —Notion es el objetivo, el sitio es el estado— pero ninguna fuent
 la dice, así que queda marcada como hipótesis y no como hecho.**
 **Quién la cierra:** quien decide. Una frase basta. -->
 
-## ¿«Radar Laboral» es parte de EntrevistIA o un producto hermano?
+## ~~¿El producto de vacantes hallado en Netlify es parte de EntrevistIA?~~ — CERRADA 2026-09-17
+**No lo es.** Queda fuera del vault; ver la decisión de arriba. Lo que sigue es
+el planteamiento original, conservado porque la pregunta era correcta aunque la
+suposición no.
+
+<!--
 Hallado el 2026-09-17 en la cuenta de Netlify (`jobinderai.netlify.app`). Hace
 lo que el *Scrapper* de Notion describe, pero **vive fuera del repositorio de
 EntrevistIA y en una cuenta de Netlify distinta de la que sirve el sitio de
@@ -289,7 +317,7 @@ ser los proyectos.
 servidor detrás de `/api/recommendations`; no se ve desde el navegador. Se
 resuelve con acceso a su repositorio.
 **Quién la cierra:** quien decide. Mientras siga abierta, `vacantes` no se
-compila.
+compila. -->
 
 ## ¿CREA es EntrevistIA, o es una incubadora con varios proyectos?
 La base de Notion se llama *Incubadora de proyectos*, en plural, pero todo su
