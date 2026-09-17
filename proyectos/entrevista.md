@@ -96,9 +96,16 @@ compromiso ajeno y envejece como tal:
 
 | Qué hace falta | Quién puede darlo | A quién bloquea | Abierto desde |
 |---|---|---|---|
-| Lectura del archivo de Figma | quien es dueño del archivo o administra su plan | toda compilada de diseño | 2026-09-17 |
-| Entrada al equipo de Miro | quien administra ese equipo | toda compilada de producto | 2026-09-17 |
+| Figma: asiento de **editor** —no de lector— para la cuenta del conector | quien es dueño del archivo o administra su plan | toda compilada de diseño | 2026-09-17 |
+| Miro: que la cuenta del conector quede **dentro del equipo** del tablero | quien administra ese equipo | toda compilada de producto | 2026-09-17 |
 | Acceso al Netlify de EntrevistIA | quien despliega el sitio | verificar qué está en el aire contra el repo | 2026-09-17 |
+
+> **Ojo con el diagnóstico, porque el primero fue malo.** No es que falte
+> permiso de lectura: ese ya está dado. Es que **el conector se autentica con
+> otra cuenta** —en Figma, la institucional `@tec.mx`, que pertenece a un solo
+> plan y no al del archivo— **y Figma exige editor, no lector**. Verificado con
+> `whoami` y una llamada de lectura el 2026-09-17. En Miro, buscar «entrevist»
+> entre los tableros de la cuenta devuelve **0 de 0**.
 
 **Y uno que sí es tuyo y se parece a los otros:** el conector de Notion está
 autenticado en un workspace distinto de `inscreup`, así que el tablero se lee

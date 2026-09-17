@@ -182,7 +182,36 @@ que sí aparecen en Notion. Dicen qué tan rápido carga la landing, no si el
 negocio va bien, y usarlos como meta habría producido un vault que responde que
 todo va bien midiendo lo que no importa.
 
+## 2026-09-17 — «Tú tienes acceso» y «el conector tiene acceso» son cosas distintas
+**Corrige a:** la decisión de hoy *«Un enlace no es un acceso»*, que tenía el
+hecho bien —no se pudo leer— y **la causa mal**. Dijo que faltaba permiso. No
+faltaba: estaba dado.
+**Qué se midió, al ser cuestionada.** `whoami` de Figma devuelve la cuenta
+**institucional `@tec.mx`**, que pertenece a **un solo plan** —el equipo personal
+de esa cuenta, tier starter— y no al plan del archivo de CREA. Y el error de
+lectura no dice *"no tienes acceso"*: dice ***"no tienes acceso de edición; el
+dueño puede hacerte editor"***. Es decir, **el conector de Figma exige asiento de
+editor; ser lector no alcanza**. En Miro, la cuenta del conector busca
+«entrevist» entre sus tableros y devuelve **0 de 0**: el tablero no está en su
+equipo.
+**Por qué importa.** Es el mismo error de capa que ya costó dos veces hoy:
+**atribuir a la fuente un fallo que era del lector**. Reportarle a alguien que
+"no dio permiso" cuando sí lo dio quema crédito y no destraba nada — el remedio
+real es otro y más específico.
+**Cómo se aplica.** Todo bloqueo de acceso se reporta con **tres datos, no uno**:
+con qué cuenta se intentó, qué nivel de permiso pedía la herramienta, y el error
+textual. Sin los tres, no es un reporte: es una suposición.
+**Remedio concreto de los dos:** en Figma, asiento de **editor** para la cuenta
+del conector, o reconectar el conector con una cuenta que ya lo tenga. En Miro,
+aceptar la invitación desde un navegador con sesión de **esa misma cuenta**.
+**Descartada:** insistirle a la contraparte por "permiso de lectura". Ya estaba
+dado; pedirlo otra vez no habría cambiado nada.
+**Y una bandera aparte:** el conector de Figma corre con la cuenta `@tec.mx`.
+Material de CREA —que no es del Tec— se estaría leyendo con infraestructura
+institucional. Es el cruce que el método prohíbe. Ver la decisión sobre cuentas.
+
 ## 2026-09-17 — Un enlace no es un acceso: los tres bloqueos siguen abiertos
+> ⚠️ **Corregida por la entrada de arriba:** el hecho es correcto, la causa no.
 **Qué pasó.** Se asumió que con los enlaces entregados bastaba. **Medido: no
 basta.** Figma devuelve *"Looks like you don't have edit access to this file"* en
 las cuatro llamadas de lectura; Miro resuelve a una página de *unirse al equipo*

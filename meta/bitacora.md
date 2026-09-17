@@ -12,6 +12,41 @@ revisar. Se agrega arriba: lo más reciente primero.
 
 ---
 
+## 2026-09-17 (5) — Cuestionado el diagnóstico de acceso, resultó mal
+
+**Qué pasó.** Se reportó que los tres bloqueos eran falta de permiso. Quien
+opera el vault respondió que los enlaces **sí venían con permiso de lectura**.
+Al medirlo, tenía razón.
+
+**Lo que se midió, y es lo que había que haber medido antes.**
+
+- **Figma.** `whoami` devuelve la cuenta **institucional `@tec.mx`**, que
+  pertenece a **un solo plan** —su propio equipo, tier starter— y no al del
+  archivo. Y el error de lectura nunca dijo *"no tienes acceso"*: dice
+  ***"no tienes acceso de edición; el dueño puede hacerte editor"***. **El
+  conector de Figma exige asiento de editor. Ser lector no alcanza.**
+- **Miro.** La cuenta del conector busca «entrevist» entre sus tableros:
+  **0 de 0**. El tablero no está en su equipo.
+
+**La regla que salió.** Es el **tercer** error de capa del día, y el más caro de
+los tres en consecuencias humanas: los dos anteriores produjeron una nota falsa,
+éste habría producido **un reclamo injusto a una contraparte que sí hizo su
+parte**. Un bloqueo de acceso se reporta con **tres datos o no se reporta**: con
+qué cuenta se intentó, qué nivel de permiso pedía la herramienta, y el error
+textual.
+
+**Y una bandera que apareció de paso.** El conector de Figma corre con la cuenta
+`@tec.mx`. Material de CREA —que no es del Tec— se leería con infraestructura
+institucional: es el cruce que el método prohíbe, y el mismo que este vault ya
+resolvió para git y para el repositorio. Queda anotado en `meta/decisiones.md`.
+
+**Qué NO se compiló.** Nada nuevo; esta vuelta fue corrección. Miro y Figma
+siguen sin leerse, pero ahora con el remedio correcto anotado: **editor** en
+Figma, y **entrar al equipo** en Miro, los dos para la cuenta del conector.
+
+**Conexiones entre frentes: ninguna que pase la vara, y se dice.**
+
+
 ## 2026-09-17 (4) — El vault rechaza por primera vez
 
 **Qué se decidió.** El producto de vacantes hallado en Netlify **no entra**: no

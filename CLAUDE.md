@@ -286,8 +286,8 @@ Seis contenedores, con su estado de acceso verificado el **2026-09-17**:
 | **Notion** — espacio `inscreup`, base *Incubadora de proyectos* | El tablero del sprint. 17 elementos | ⚠️ Parcial: solo por el sitio público. El conector está autenticado en otro workspace |
 | **Sitio** — `entrevist-ia.netlify.app` | El producto desplegado | ⚠️ Parcial: es una SPA y las rutas internas dan 404; lo leído salió del bundle compilado |
 | **Netlify** | Los despliegues | 🔴 Enumerada el 2026-09-17: 8 proyectos, **ninguno de CREA**. `entrevist-ia` se despliega desde otra cuenta |
-| **Miro** | El tablero de armado de producto | 🔴 Sin acceso: el enlace exige unirse a otro equipo |
-| **Figma** — *Entrenamiento Entrevistas IA* | Los diseños | 🔴 Sin acceso: la cuenta conectada no pertenece al plan del archivo |
+| **Miro** | El tablero de armado de producto | 🔴 El conector no lo ve: su cuenta no está en ese equipo. Búsqueda «entrevist» → 0 de 0 |
+| **Figma** — *Entrenamiento Entrevistas IA* | Los diseños | 🔴 El conector **exige asiento de editor**, no de lector. Además está autenticado con la cuenta `@tec.mx` |
 
 **Trampas conocidas de estas fuentes** — verificadas, no heredadas:
 
@@ -297,6 +297,12 @@ Seis contenedores, con su estado de acceso verificado el **2026-09-17**:
   Agrupar por ellas produce una nota falsa. Agrupa por contenido.
 - ⚠️ **14 de las 17 páginas de Notion están vacías.** Solo tres tienen cuerpo.
   Un título no es una fuente: no cites una fila vacía como si dijera algo.
+- 🔴 **«Tú tienes acceso» no es «el conector tiene acceso».** Son dos cosas
+  distintas y confundirlas costó una afirmación mal fundada el 2026-09-17. Un
+  enlace de lectura funciona en **tu** navegador con **tu** sesión; los
+  conectores se autentican con **su propia cuenta**, que puede ser otra. Y en
+  Figma ni siquiera basta ser lector: su conector **pide asiento de editor**.
+  Antes de reportar un bloqueo, di **qué cuenta** falló y **qué nivel** pedía.
 - 🔴 **El universo de fuentes no es el que te dieron.** Dos veces el 2026-09-17
   se escribió «no existe» sobre algo que sí existía, y las dos veces la causa
   fue la misma: **mirar solo los contenedores que estaban en la lista**. Antes de
