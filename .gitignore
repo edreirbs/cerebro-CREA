@@ -1,0 +1,22 @@
+.DS_Store
+.obsidian/workspace.json
+
+# Derivados de la herramienta: el grafo, el índice y el sitio se regeneran.
+# Un artefacto derivado dentro de la fuente produce diffs ruidosos y se
+# desincroniza.
+.cerebro/
+
+# El buzón es tránsito, no conocimiento.
+inbox/*
+!inbox/.gitkeep
+!inbox/README.md
+
+# Nada de binarios en fuentes/: los originales se quedan donde ya viven.
+fuentes/*.pdf
+fuentes/*.pptx
+fuentes/*.docx
+fuentes/*.xlsx
+
+# Si creas una carpeta privada, va aquí. Consecuencia: no tiene respaldo.
+# Eso es la función, no el defecto.
+privado/

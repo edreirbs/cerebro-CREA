@@ -1,0 +1,58 @@
+{
+  "vault": { "nombre": "CREA", "version": 1 },
+
+  "contenido": {
+    "ignora":     [".git", ".claude", ".obsidian", ".cerebro", "inbox", "privado"],
+    "sin_cuerpo": ["meta"],
+    "orden":      ["proyectos", "notas", "personas", "fuentes", "meta"]
+  },
+
+  // La lista blanca. Sin esto no hay vault: es lo que le da la capacidad
+  // de rechazar. Propuesta el 2026-09-17 leyendo las fuentes; el criterio y
+  // lo que se descartó están en meta/decisiones.md.
+  "frentes": [
+    { "id": "entrevista", "nombre": "Entrevista",  "color": "#2f9e7e" },
+    { "id": "vacantes",   "nombre": "Vacantes",    "color": "#c47f28" },
+    { "id": "comercial",  "nombre": "Comercial",   "color": "#7a5bd0" },
+    { "id": "incubacion", "nombre": "Incubación",  "color": "#3d7fbf" }
+  ],
+
+  "reglas": {
+    "rancio_dias": 45,
+    "rancio_dias_fuentes": 90,
+    "tope_enlaces_rotos": 12,
+    "tope_tamano_nota_kb": 100
+  },
+
+  // Se nombra el CONTENEDOR, nunca una lista de objetos: lo que se cree
+  // mañana tiene que ser visible sin editar esto. Define el UNIVERSO a
+  // mirar, no la clasificación — ninguna fuente pertenece a un frente por
+  // configuración; eso se decide leyendo su contenido.
+  // Cero credenciales aquí.
+  "fuentes": {
+    "notion": {
+      "espacio": "inscreup",
+      "base": "Incubadora de proyectos",
+      "sitio_publico": "https://inscreup.notion.site/38ce78250e0880d39c33ec11ac0277c9",
+      "acceso": "solo por el sitio público: el conector está autenticado en otro workspace"
+    },
+    "web": {
+      "produccion": "https://entrevist-ia.netlify.app/"
+    },
+    "miro": {
+      "tablero": "Armar producto (nombre tomado de Notion, no verificado en Miro)",
+      "acceso": "sin acceso. El enlace de invitación NO se guarda aquí: es del tipo que da entrada a un equipo, así que es credencial y no va en un archivo versionado."
+    },
+    "figma": {
+      "archivo": "Entrenamiento Entrevistas IA",
+      "url": "https://www.figma.com/design/ewxHYLjZkfq8ZBra53Qbe9/",
+      "acceso": "sin acceso de lectura: la cuenta conectada no pertenece al plan del archivo"
+    }
+  },
+
+  // "contenido" porque los cuerpos van a salir del vault hacia quien pregunte
+  // al modelo. Ese mismo interruptor enciende el chequeo de fugas de
+  // `cerebro verificar`; con "metadatos" una matrícula y un correo de prueba
+  // pasaron en silencio. Ver meta/decisiones.md, 2026-09-17.
+  "publicar": { "renderer": "tablero", "destino": "local", "publica": "contenido" }
+}
