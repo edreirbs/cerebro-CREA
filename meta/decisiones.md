@@ -150,6 +150,46 @@ vuelta no produjo ninguna, se dice.**
 > A partir de aquí, las tuyas. La primera suele salir del alto después del
 > piloto — ver `ARRANQUE.md`, paso 3.
 
+## 2026-09-17 — Auditoría del piloto: la capa meta pesa 3.7× más que el conocimiento
+**Qué se midió** (paso 3 del arranque, las tres preguntas):
+
+1. **¿Cuántos archivos produjo?** Seis, pero **una sola nota de conocimiento**:
+   `proyectos/entrevista.md`, 202 líneas. Contra ella, la capa meta suma **759**
+   —`decisiones.md` 473 y `bitacora.md` 286—. **Proporción 3.7 a 1 a favor del
+   vault hablando de sí mismo.**
+2. **¿Cuántos se van a releer?** `entrevista.md` sí, en cada junta. `CLAUDE.md`
+   se carga solo. De `bitacora.md` se leen **las últimas tres entradas**, por
+   diseño. De `decisiones.md`, **13 entradas escritas en un solo día, nadie las
+   va a releer completas**, y ése es exactamente el defecto que el método
+   registra con las 54 fichas: producir material que envejece sin relectura.
+3. **¿Qué regla resultó falsa al tocar material real?** **Tres**, y todas mías:
+   que el despliegue refleja el producto · que el universo de fuentes es el que
+   te entregan · que un bloqueo de acceso significa falta de permiso.
+
+**El diagnóstico, que es peor que las tres fallas sueltas.** Las tres son **la
+misma**: afirmé sin verificar en qué capa estaba mirando, y cada una se corrigió
+solo cuando llegó evidencia nueva o cuando alguien me cuestionó. **El ciclo
+corrió al revés:** compilar → publicar → que me corrijan, en vez de verificar →
+compilar. Y produjo su propio síntoma: **3 de las 5 entradas de bitácora del día
+son correcciones de errores propios**, no compiladas.
+
+**La regla, una en vez de tres.** Antes de escribir una afirmación de ausencia
+—*no existe, no está construido, no hay acceso*— se hace **una verificación más,
+en otra capa**, y esa verificación se cita en la nota. Sin segunda capa, no se
+escribe la ausencia: se escribe el hueco. Las tres entradas previas de hoy sobre
+capas, universo y acceso son **casos** de ésta, no reglas independientes.
+
+**Cómo se aplica al tamaño.** No se borra nada —`decisiones.md` se agrega, no se
+reescribe— pero **se deja de escribir una entrada por incidente**. Una entrada
+nueva solo si la lección no está ya cubierta por una existente; si lo está, se
+anota como caso bajo ella. Y **si a la siguiente compilada la proporción no se
+ha invertido, el problema no es el registro: es que el vault no está compilando
+conocimiento.**
+
+**Descartada:** podar `decisiones.md` ahora. Tiene un día de vida: podar lo que
+todavía no se ha releído es adivinar qué sobra. Se revisa en la compilada que
+cierre el mes.
+
 ## 2026-09-17 — CREA es una organización incubadora, no un producto
 **Qué se decidió.** CREA *"idea, desarrolla, incuba y despliega ágilmente casos
 de negocio basados en tecnologías digitales e IA"*. Es la casa, no el producto.

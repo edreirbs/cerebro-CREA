@@ -10,7 +10,8 @@
 
 ---
 
-## ☐ 1 · Escribe el contrato antes que una sola nota
+## ☑ 1 · Escribe el contrato antes que una sola nota  — HECHO 2026-09-17
+> Cerrado con dos huecos **declarados**: sin dolores y sin meta. Ver `CLAUDE.md` §1 y §4.
 
 Abre `CLAUDE.md` y llena los blancos. Lo que más cuesta y más vale:
 
@@ -27,14 +28,17 @@ Abre `CLAUDE.md` y llena los blancos. Lo que más cuesta y más vale:
 No sigas hasta que la lista blanca esté cerrada. **Es lo que le da al vault la
 capacidad de rechazar, y un vault que no rechaza nada no es un cerebro.**
 
-## ☐ 2 · Compila UN solo frente. Completo. Nada más.
+## ☑ 2 · Compila UN solo frente. Completo. Nada más.  — HECHO 2026-09-17
+> `proyectos/entrevista.md`. Ocho bloques, salvo la meta, que se declaró inexistente.
 
 Elige el frente que más te preguntan o el que más te duele. Compílalo hasta que
 su nota de proyecto tenga los ocho bloques vivos y todas sus cifras citadas.
 
 **No toques el segundo frente.** Va a dar comezón. Aguántate.
 
-## ☐ 3 · ALTO. Audita el piloto antes de escalar.
+## ☑ 3 · ALTO. Audita el piloto antes de escalar.  — HECHO 2026-09-17
+> Resultado: 3.7 líneas de meta por cada una de conocimiento, y **tres reglas
+> propias resultaron falsas**. Ver `meta/bitacora.md`, entrada (6).
 
 Tres preguntas, contestadas por escrito:
 
@@ -48,7 +52,9 @@ una ficha"*. La corrección dejó 6 fichas sin perder un solo hecho — y evitó
 el mismo error se multiplicara por cuatro al escalar. **Escalar antes de cerrar
 el piloto es la forma más cara de descubrir que una regla estaba mal.**
 
-## ☐ 4 · Reescribe el contrato y registra la corrección
+## ☑ 4 · Reescribe el contrato y registra la corrección  — HECHO 2026-09-17
+> Trece decisiones propias en `meta/decisiones.md`, incluida la que consolida
+> las tres reglas falsas en una.
 
 Arregla `CLAUDE.md` con lo aprendido, y escribe la primera entrada propia en
 `meta/decisiones.md`: qué salió mal, por qué importa, cómo se aplica de aquí en

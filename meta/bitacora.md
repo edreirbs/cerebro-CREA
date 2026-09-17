@@ -12,6 +12,47 @@ revisar. Se agrega arriba: lo más reciente primero.
 
 ---
 
+## 2026-09-17 (6) — ALTO: auditoría del piloto (paso 3 del arranque)
+
+**El paso que no se puede saltar, hecho.** Las tres preguntas, con números:
+
+| Pregunta | Respuesta |
+|---|---|
+| ¿Cuántos archivos produjo? | 6 · **una sola nota de conocimiento** (202 líneas) |
+| ¿Cuánto pesa la capa meta? | **759 líneas** — decisiones 473, bitácora 286 |
+| Proporción meta : conocimiento | **3.7 a 1**, a favor del vault hablando de sí mismo |
+| ¿Cuántos se van a releer? | La nota y el contrato. De la bitácora, 3 entradas. De decisiones, **13 en un día: nadie** |
+| ¿Qué reglas resultaron falsas? | **Tres**, todas propias |
+
+**Las tres reglas falsas son una sola.** El despliegue no refleja el producto ·
+el universo no es el que te entregan · un bloqueo no es falta de permiso.
+Las tres tienen la misma forma: **afirmar sin verificar en qué capa estoy
+mirando**. Y las tres se corrigieron tarde — por evidencia nueva o porque me
+cuestionaron.
+
+**El síntoma medible:** **3 de las 5 entradas anteriores de esta bitácora son
+correcciones de errores propios**, no compiladas. El ciclo corrió al revés:
+compilar → publicar → que me corrijan.
+
+**La corrección, y es una regla en vez de tres:** antes de escribir cualquier
+ausencia —*no existe, no está construido, no hay acceso*— **una verificación más,
+en otra capa, citada en la nota**. Sin esa segunda capa no se escribe la
+ausencia: se escribe el hueco.
+
+**Lo que esto cambia para el paso 5.** Escalar a `comercial` e `incubacion` con
+el ciclo al revés habría multiplicado por cuatro el mismo error — que es
+literalmente la razón por la que este alto existe. Se escala **con la regla
+nueva puesta**, no antes.
+
+**Lo que NO se corrige:** nada de lo ya escrito. La bitácora es histórica y
+`decisiones.md` se agrega, no se reescribe. Lo que cambia es el método de aquí
+en adelante.
+
+**Advertencia para la siguiente compilada:** si la proporción 3.7 : 1 no se ha
+invertido, el problema no es el registro — es que el vault no está compilando
+conocimiento, solo administrándose a sí mismo.
+
+
 ## 2026-09-17 (5) — Cuestionado el diagnóstico de acceso, resultó mal
 
 **Qué pasó.** Se reportó que los tres bloqueos eran falta de permiso. Quien
