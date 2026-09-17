@@ -12,6 +12,49 @@ revisar. Se agrega arriba: lo más reciente primero.
 
 ---
 
+## 2026-09-17 (7) — Paso 5: los tres frentes restantes, y el primer barrido de conexiones real
+
+**Qué se compiló.** `comercial`, `incubacion` y `vacantes`, con la regla nueva
+puesta: **ninguna ausencia se escribió sin una segunda verificación citada**.
+`cerebro verificar` cierra en **0 errores y 0 advertencias** — los dos enlaces
+rotos desaparecieron solos al existir las notas que faltaban.
+
+**Dos conexiones pasaron la vara, y es la primera vez.** Los cuatro barridos
+anteriores declararon «ninguna» honestamente: con un frente no hay nada que
+cruzar. Van en `notas/conexiones.md`.
+
+- **C-01.** El tablero dice *Not started* en 17 de 17 mientras el repositorio
+  commiteó el 2026-09-16 y la voz ya está construida. **Al programa se le va a
+  reportar cero avance sobre un proyecto que sí avanzó**, y el sprint cierra en
+  diciembre.
+- **C-02.** La landing promete voz; la voz **ya existe y solo no está
+  desplegada**. Leyendo Comercial sola la conclusión sería *"baja la promesa"*;
+  juntas dicen lo contrario: **un despliegue cierra el riesgo sin tocar el
+  mensaje**. Bajar la promesa habría destruido valor ya construido.
+
+**Dos candidatas descartadas, y se dice cuáles.** *"Ningún frente tiene meta"* es
+una ausencia compartida, no una conexión. *"Vacantes es el plan más reciente sin
+código"* se ve entera leyendo un solo frente.
+
+**Qué NO se compiló.** `comercial` es la nota más pobre del vault y se declara
+así: **3 filas de Notion, 0 con cuerpo**. Lo único con texto es copy de
+marketing. Miro y Figma —donde suele vivir el pitch— siguen cerrados. De
+`incubacion`, no se buscó nada del programa CREA fuera de esa base: **no es que
+no exista, es que no se entregó fuente y no se buscó.**
+
+**Sobre la proporción que se midió en el alto.** Era 3.7 : 1 a favor de la capa
+meta. Esta vuelta agregó cuatro notas de conocimiento y una entrada de bitácora:
+va en la dirección correcta. Se vuelve a medir en la próxima compilada.
+
+**Qué queda marcado para quien decide.**
+
+1. **Actualizar los estados del tablero.** Cuesta minutos y es lo que el
+   programa mira para evaluar. Es el hallazgo más barato de todo el día.
+2. **Desplegar lo que ya está en el repositorio.** Cierra C-02 sin tocar el
+   mensaje comercial.
+3. **El 6.4 fijo sigue en producción**, y eso sí es promesa sin producto.
+
+
 ## 2026-09-17 (6) — ALTO: auditoría del piloto (paso 3 del arranque)
 
 **El paso que no se puede saltar, hecho.** Las tres preguntas, con números:
