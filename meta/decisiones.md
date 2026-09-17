@@ -150,6 +150,27 @@ vuelta no produjo ninguna, se dice.**
 > A partir de aquí, las tuyas. La primera suele salir del alto después del
 > piloto — ver `ARRANQUE.md`, paso 3.
 
+## 2026-09-17 — El universo de fuentes se barre; no se acepta la lista que te dan
+**Qué pasó, y pasó dos veces el mismo día.** Se escribió *"la voz no está
+construida"* y *"el pipeline de vacantes es plan puro"*. Las dos eran falsas. La
+voz estaba en el repositorio; las vacantes estaban **desplegadas** como un
+producto llamado «Radar Laboral», que apareció solo al listar los 8 proyectos de
+la cuenta de Netlify en vez de mirar el enlace recibido.
+**Por qué importa.** Las dos veces el error tuvo la misma forma: **el universo
+examinado era el de los enlaces que llegaron**, y una ausencia dentro de un
+universo mal delimitado no dice nada sobre el mundo. Es el mismo error que el
+método ya registra con otras palabras — *vigilar una lista no sirve; hay que
+vigilar el momento en que algo se crea* — y aquí costó dos afirmaciones falsas
+antes de verse.
+**Cómo se aplica.** Antes de escribir cualquier ausencia se **enumera el
+contenedor completo**: los repos de la cuenta, los despliegues del equipo, los
+proyectos del espacio. Y la nota declara **cuántos se enumeraron**, no solo
+cuántos se leyeron. Un enlace recibido es un punto de entrada, nunca el universo.
+**Descartada:** confiar en que las fuentes entregadas estaban completas. Es
+cómodo y es exactamente lo que falló.
+**Corrige a:** la regla de hoy sobre *repositorio → despliegue → Notion*, que
+ordenaba bien las capas pero daba por buena la lista de objetos dentro de cada una.
+
 ## 2026-09-17 — El repositorio es la fuente primaria del producto; el despliegue no
 **Qué pasó.** La primera compilada concluyó que la entrevista por voz *"no
 estaba construida"*, con evidencia que parecía dura: cero ocurrencias de
@@ -255,6 +276,20 @@ expediente está mal y hay que corregirlo. **Hay una hipótesis que reconcilia
 las cuatro —Notion es el objetivo, el sitio es el estado— pero ninguna fuente
 la dice, así que queda marcada como hipótesis y no como hecho.**
 **Quién la cierra:** quien decide. Una frase basta. -->
+
+## ¿«Radar Laboral» es parte de EntrevistIA o un producto hermano?
+Hallado el 2026-09-17 en la cuenta de Netlify (`jobinderai.netlify.app`). Hace
+lo que el *Scrapper* de Notion describe, pero **vive fuera del repositorio de
+EntrevistIA y en una cuenta de Netlify distinta de la que sirve el sitio de
+EntrevistIA**. De la respuesta depende la lista blanca: si es parte, `vacantes`
+es un frente de un producto; si es hermano, la pregunta de si CREA es una
+incubadora con varios proyectos ya se contestó sola, y los frentes tendrían que
+ser los proyectos.
+**Hueco pendiente:** qué bolsas de trabajo usa. El pipeline corre del lado
+servidor detrás de `/api/recommendations`; no se ve desde el navegador. Se
+resuelve con acceso a su repositorio.
+**Quién la cierra:** quien decide. Mientras siga abierta, `vacantes` no se
+compila.
 
 ## ¿CREA es EntrevistIA, o es una incubadora con varios proyectos?
 La base de Notion se llama *Incubadora de proyectos*, en plural, pero todo su

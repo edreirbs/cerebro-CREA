@@ -53,14 +53,16 @@ El criterio con que se separaron —y lo que se descartó— está en
 
 ### 1. Entrevista
 El producto en vivo: el embudo registro → onboarding → entrevista → informe de
-evaluación. Cuelga de aquí el motor de preguntas, la capa de voz (hoy
-prometida, no construida), la rúbrica de evaluación y el consumo por sesión.
+evaluación. Cuelga de aquí el motor de preguntas, la capa de voz (**ya
+construida, no desplegada** — corregido 2026-09-17), la rúbrica de evaluación y
+el consumo por sesión.
 **Usuario propio:** el candidato que practica. **Presupuesto propio:** audio y
 tokens por sesión.
 
 ### 2. Vacantes
 El pipeline CV → perfil → proveedores de empleo → score → rerank, que en Notion
-aparece como *Scrapper*. **Usuario propio:** quien busca trabajo, que no es
+aparece como *Scrapper* y que **ya existe desplegado** como «Radar Laboral»
+(`jobinderai.netlify.app`) — hallado el 2026-09-17, sin compilar todavía. **Usuario propio:** quien busca trabajo, que no es
 necesariamente quien practica. **Presupuesto propio:** cuotas de proveedores
 externos de vacantes más las llamadas de rerank.
 
@@ -274,13 +276,14 @@ Toda nota en `proyectos/` mantiene estos bloques vivos:
 
 ## 11. De dónde sale el material
 
-Cinco contenedores, con su estado de acceso verificado el **2026-09-17**:
+Seis contenedores, con su estado de acceso verificado el **2026-09-17**:
 
 | Fuente | Qué es | Acceso |
 |---|---|---|
 | **Repositorio** — `TheIns07/entrevist-ia` | El código del producto. **Fuente primaria** | ✅ Público. Clon superficial: sin historial ni PRs |
 | **Notion** — espacio `inscreup`, base *Incubadora de proyectos* | El tablero del sprint. 17 elementos | ⚠️ Parcial: solo por el sitio público. El conector está autenticado en otro workspace |
 | **Sitio** — `entrevist-ia.netlify.app` | El producto desplegado | ⚠️ Parcial: es una SPA y las rutas internas dan 404; lo leído salió del bundle compilado |
+| **Netlify** | Los despliegues | ⚠️ Parcial: `jobinderai` sí está en la cuenta conectada; **`entrevist-ia` no** — vive en otra |
 | **Miro** | El tablero de armado de producto | 🔴 Sin acceso: el enlace exige unirse a otro equipo |
 | **Figma** — *Entrenamiento Entrevistas IA* | Los diseños | 🔴 Sin acceso: la cuenta conectada no pertenece al plan del archivo |
 
@@ -292,6 +295,11 @@ Cinco contenedores, con su estado de acceso verificado el **2026-09-17**:
   Agrupar por ellas produce una nota falsa. Agrupa por contenido.
 - ⚠️ **14 de las 17 páginas de Notion están vacías.** Solo tres tienen cuerpo.
   Un título no es una fuente: no cites una fila vacía como si dijera algo.
+- 🔴 **El universo de fuentes no es el que te dieron.** Dos veces el 2026-09-17
+  se escribió «no existe» sobre algo que sí existía, y las dos veces la causa
+  fue la misma: **mirar solo los contenedores que estaban en la lista**. Antes de
+  afirmar una ausencia, se barre la cuenta —repos, despliegues, proyectos— en vez
+  de confiar en los enlaces recibidos. Vigilar una lista no sirve.
 - 🔴 **El despliegue no es el código.** El 2026-09-17 el sitio iba atrasado
   respecto del repositorio y eso produjo una conclusión falsa. **El repositorio
   manda sobre el despliegue; los dos mandan sobre Notion.** Antes de afirmar que

@@ -12,6 +12,54 @@ revisar. Se agrega arriba: lo más reciente primero.
 
 ---
 
+## 2026-09-17 (3) — Barrer la cuenta de Netlify refuta a las dos compiladas anteriores
+
+**Qué se compiló.** Nada nuevo: se **corrigió**. Entró Netlify como sexto
+contenedor y se enumeraron sus **8 proyectos**, que es lo que no se había hecho.
+
+**Dos hallazgos, y el segundo vuelve a ser un error propio.**
+
+1. **El sitio de EntrevistIA no está en la cuenta conectada.** Los 8 proyectos
+   del equipo no lo incluyen: se despliega desde otra cuenta. Es la **tercera**
+   fuente cerrada, junto con Miro y Figma.
+2. **«Radar Laboral» (`jobinderai.netlify.app`) sí está, y es el frente
+   Vacantes desplegado.** Sube CV en PDF/TXT/MD, extrae el perfil, lo deja
+   revisar, y devuelve *"una vacante hot, una internacional, una cercana a tu
+   mercado y una reserva ampliada desde varias bolsas activas"*, con entrada por
+   Google e historial guardado. La compilada de la mañana había escrito que el
+   pipeline de vacantes era *"plan puro, cero rastro"*. **Falso.**
+
+**La regla que salió, y corrige a la de hace unas horas.** Ésta es la segunda
+afirmación de ausencia falsa del día, y las dos tienen la misma forma: *el
+universo examinado era el de los enlaces recibidos*. La regla de la mañana
+ordenaba las capas —repositorio sobre despliegue sobre Notion— pero daba por
+buena la lista de objetos dentro de cada capa. La nueva: **se enumera el
+contenedor completo antes de escribir cualquier ausencia, y se declara cuántos
+objetos se enumeraron, no solo cuántos se leyeron.**
+
+**Qué NO se compiló.** `vacantes` **no se abrió como nota**, aunque ya haya
+material real: el paso 2 del arranque manda un solo frente hasta auditar el
+piloto, y el piloto lleva dos correcciones en un día — es exactamente el momento
+en que escalar multiplica errores. El enlace `[[vacantes]]` queda roto a
+propósito.
+
+**Hueco declarado.** Qué bolsas de trabajo usa Radar Laboral **no se pudo
+verificar**: su cliente solo llama a `/api/recommendations` y
+`/api/search-history`, y el pipeline corre del lado servidor. **No es una
+ausencia, es un hueco** — se cierra con acceso a su repositorio.
+
+**Conexiones entre frentes: ninguna que pase la vara, y se dice.** Sigue habiendo
+un solo frente compilado.
+
+**Qué queda marcado para quien decide.**
+
+1. **¿Radar Laboral es parte de EntrevistIA o un producto hermano?** De eso
+   depende si la lista blanca de cuatro frentes sigue siendo la correcta.
+2. **Tres de seis fuentes están cerradas.** Miro, Figma y ahora el Netlify de
+   EntrevistIA.
+3. Siguen en pie el 6.4 en producción y el 404 por falta de reglas de SPA.
+
+
 ## 2026-09-17 (2) — El repositorio entra como fuente, y refuta a la compilada anterior
 
 **Qué se compiló.** Se agregó el repositorio del producto como **quinta fuente y

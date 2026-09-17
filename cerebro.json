@@ -47,6 +47,12 @@
     "web": {
       "produccion": "https://entrevist-ia.netlify.app/"
     },
+    // El CONTENEDOR es la cuenta, no una lista de sitios: lo que se despliegue
+    // mañana tiene que ser visible sin editar esto. Así apareció Radar Laboral.
+    "netlify": {
+      "equipo": "la cuenta conectada (8 proyectos al 2026-09-17)",
+      "acceso": "parcial: `jobinderai` (Radar Laboral) sí está; `entrevist-ia` NO — se despliega desde otra cuenta"
+    },
     "miro": {
       "tablero": "Armar producto (nombre tomado de Notion, no verificado en Miro)",
       "acceso": "sin acceso. El enlace de invitación NO se guarda aquí: es del tipo que da entrada a un equipo, así que es credencial y no va en un archivo versionado."
