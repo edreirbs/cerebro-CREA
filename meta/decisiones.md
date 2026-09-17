@@ -150,6 +150,34 @@ vuelta no produjo ninguna, se dice.**
 > A partir de aquí, las tuyas. La primera suele salir del alto después del
 > piloto — ver `ARRANQUE.md`, paso 3.
 
+## 2026-09-17 — Las fuentes de CREA son ajenas, y entran igual
+**Qué se decidió.** El repositorio, Notion, Miro y Figma pertenecen a otras
+personas. **Entran como fuentes de todas formas.** La lista blanca filtra por
+**tema**, no por propiedad: nunca pidió que las fuentes fueran de uno.
+**Por qué importa, y es lo que no se ve de entrada.** Cambia dos cosas del
+método para este vault:
+
+1. **Los bloqueos de acceso son compromisos ajenos, no pendientes tuyos.** Miro
+   y Figma no se arreglan con esfuerzo propio: alguien más tiene que dar
+   entrada. Por eso viven en el bloque *Compromisos ajenos* de
+   `proyectos/entrevista.md`, con su fecha de apertura, y envejecen a la vista
+   como cualquier otro compromiso — que es justo lo que los hace accionables.
+2. **«Se abre con un clic» deja de ser garantía.** El método reserva la ficha en
+   `fuentes/` para el original irrecuperable, porque lo consultable se cita con
+   su URL en vez de copiarse. Con fuentes ajenas esa garantía es de otro: el
+   sitio público de Notion se despublica con un clic ajeno, y el acceso al repo
+   se revoca igual. **Recalibración:** cuando una fuente ajena sostenga una
+   cifra o una decisión que se vaya a citar, se levanta ficha en `fuentes/` con
+   lo destilado y su fecha de lectura, aunque hoy se abra con un clic.
+**Cómo se aplica.** Nada cambia en la lista blanca ni en la configuración. Lo
+que cambia es el criterio de ficha, arriba, y que las tres fuentes cerradas se
+reportan como compromisos ajenos con antigüedad.
+**Descartada:** exigir propiedad o acceso garantizado antes de declarar una
+fuente. Habría dejado fuera **todo** el material de CREA — el universo entero es
+ajeno — y un vault sin fuentes no compila nada.
+**Lo que NO cambia:** que este repositorio, el cerebro, sí es tuyo y vive en tu
+cuenta. Es el contenedor de lo destilado, no de los originales.
+
 ## 2026-09-17 — El producto de vacantes hallado en Netlify NO entra: es el primer rechazo del vault
 **Qué se decidió.** El producto desplegado que apareció al enumerar la cuenta de
 Netlify —parecido al *Scrapper* que Notion documenta— **queda fuera de este

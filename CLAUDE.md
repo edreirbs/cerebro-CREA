@@ -276,6 +276,16 @@ Toda nota en `proyectos/` mantiene estos bloques vivos:
 
 ## 11. De dónde sale el material
 
+**Ninguna de estas fuentes es tuya**, y entran igual: la lista blanca filtra por
+tema, no por propiedad. Dos consecuencias, decididas el 2026-09-17:
+
+- **Un bloqueo de acceso es un compromiso ajeno**, no un pendiente tuyo. Va al
+  bloque de compromisos de la nota del frente, con fecha, y envejece a la vista.
+- **«Se abre con un clic» es garantía de otro.** Si una fuente ajena sostiene
+  una cifra o decisión que vas a citar, **levanta ficha en `fuentes/`** con lo
+  destilado y su fecha de lectura, aunque hoy se abra sin fricción. Un acceso
+  revocado o una página despublicada dejan la cifra sin respaldo.
+
 Seis contenedores, con su estado de acceso verificado el **2026-09-17**:
 
 | Fuente | Qué es | Acceso |

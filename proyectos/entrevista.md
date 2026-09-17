@@ -90,13 +90,20 @@ bloque que más vale a los seis meses y está vacío.
 
 ## 6. Compromisos ajenos
 
-**Ninguno capturado con nombre**, por la regla de datos personales. Dos bloqueos
-identificados necesitan que alguien les ponga nombre y rol:
+**Ninguno con nombre**, por la regla de datos personales. Pero **las fuentes de
+este proyecto son todas ajenas**, así que cada bloqueo de acceso *es* un
+compromiso ajeno y envejece como tal:
 
-| Qué hace falta | A quién bloquea | Desde |
-|---|---|---|
-| Acceso de lectura al archivo de Figma | A toda compilada de diseño | 2026-09-17 |
-| Entrada al equipo de Miro | A toda compilada de producto | 2026-09-17 |
+| Qué hace falta | Quién puede darlo | A quién bloquea | Abierto desde |
+|---|---|---|---|
+| Lectura del archivo de Figma | quien es dueño del archivo o administra su plan | toda compilada de diseño | 2026-09-17 |
+| Entrada al equipo de Miro | quien administra ese equipo | toda compilada de producto | 2026-09-17 |
+| Acceso al Netlify de EntrevistIA | quien despliega el sitio | verificar qué está en el aire contra el repo | 2026-09-17 |
+
+**Y uno que sí es tuyo y se parece a los otros:** el conector de Notion está
+autenticado en un workspace distinto de `inscreup`, así que el tablero se lee
+solo por su sitio público. Eso limita la compilada a lo publicado — sin
+comentarios, sin historial, sin propiedades ocultas.
 
 ## 7. Riesgos y contradicciones abiertas
 
